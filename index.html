@@ -16,52 +16,46 @@
     <link href="starter-template.css" rel="stylesheet">
   </head>
 
-  <body>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="header">
-      <a class="navbar-brand" href="#"><img src="" id="header-img" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="nav-bar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+  <header id="header">
+    <nav id="nav-bar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <img src="https://drive.google.com/file/d/1uIYoPNgUxbrOqZC2uR7Ajv3k_ECBTKbI/view?usp=sharing" alt="Swaptivity logo" id="header-img" />
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
+  </header>
+
+  <body>
 
     <main role="main" class="container">
 
       <div class="starter-template">
-        <div id="#about">
+        <div id="about">
           <h1>About our widgets</h1>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <p class="lead">This is a page about widgets.</p>
           <video id="video" controls>
             <source src="img/Bokeh Video Of Leaves.mp4" />
           </video>
         </div>
 
-        <div id="#pricing">
+        <div id="pricing">
           <h1>Pricing</h1>
         </div>
 
-        <div id="#contact">
+        <div id="contact">
           <h1>Contact us</h1>
-          <form id="form">
-
+          <form id="form" action="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+            <label>Email: </label>
+            <input name="email" type="email" id="email" placeholder="email" />
+            <input id="submit" type="submit" class="btn btn-primary" value="Submit"></input>
           </form>
         </div>
       </div>
